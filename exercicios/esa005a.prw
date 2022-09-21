@@ -55,7 +55,7 @@ Return aRotina
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ESANOME
-Função que retorna uma validação para o campo nome do aluno 
+Função que retorna no inic browser o nome do aluno
 
 @author Eloisa Anibaletto
 @since 25/08/2022
@@ -69,7 +69,7 @@ Return IIf( ZZ2->( dbSeek( xFilial( "ZZ2", cFil ) + ZZ5->ZZ5_MATAL ) ), ZZ2->ZZ2
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ESADESCT
-Função que retorna uma validação para o campo descrição de turma 
+Função que retorna no inic browser a descrição da turma
 
 @author Eloisa Anibaletto
 @since 25/08/2022

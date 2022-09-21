@@ -173,15 +173,15 @@ User Function RepPrint( oReport )
 
 		oSection:PrintLine()
 
+		If ni == Len( aCampo )
+			oSection2:Init( .F. )
+			oSection2:PrintLine()
+			oSection2:Finish()
+		EndIf
+
 	Next
 
 	oSection:Finish()
-
-	oSection2:Init( .F. )
-
-	oSection2:PrintLine()
-
-	oSection2:Finish()
 
 Return
 

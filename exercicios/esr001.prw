@@ -79,16 +79,6 @@ User Function ReportPrint( oReport )
 
 	Private nPos := 0
 
-	If Mv_Par02 = ""
-		Mv_Par02 := "zzzzzzzzz"
-	EndIf
-	If Mv_Par04 = ""
-		Mv_Par04 := "zzzzz"
-	EndIf
-	If Mv_Par06 = ""
-		Mv_Par06 := "zzzzzz"
-	EndIf
-
 	BeginSql Alias cAlias
 
 		SELECT 
@@ -138,17 +128,19 @@ User Function ReportPrint( oReport )
 
 	( cAlias )->( DbGoTop() )
 
+	While ( cAlias )->( !Eof() )
+
 		aAdd( aCampo, {;
-			( cAlias )->ZZ1_MAT,;
-			( cAlias )->ZZ1_NOME,;
+			( cAlias )->ZZ2_MATAL,;
+			( cAlias )->ZZ2_NOME,;
 			( cAlias )->ZZ4_TURMA,;
 			( cAlias )->ZZ4_DESCT,;
 			( cAlias )->ZZ3_CODMAT,;
 			( cAlias )->ZZ3_DESCRI,;
 			( cAlias )->ZZ7_NOTA,;
 			( cAlias )->ZZ7_DATA,;
-			( cAlias )->ZZ2_MATAL,;
-			( cAlias )->ZZ2_NOME;
+			( cAlias )->ZZ1_MAT,;
+			( cAlias )->ZZ1_NOME;
 		} )
 
 		If aScan(aDiscCount, ( cAlias )->ZZ6_DISC) == 0
@@ -177,6 +169,8 @@ User Function ReportPrint( oReport )
 
 		( cAlias )->( DbSkip() )
 
+	End
+
 	( cAlias )->( DbCloseArea() )
 
 	oSection:Init( .F. )
@@ -187,14 +181,16 @@ User Function ReportPrint( oReport )
 
 		oSection:PrintLine()
 
+		If ni == Len( aCampo )
+			oSection2:Init( .F. )
+			oSection2:PrintLine()
+			oSection2:Finish()
+		EndIf
+
 	Next
 
 	oSection:Finish()
 
-	oSection2:Init( .F. )
 
-	oSection2:PrintLine()
-
-	oSection2:Finish()
 
 Return

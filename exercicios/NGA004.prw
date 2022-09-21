@@ -45,7 +45,7 @@ Static Function MenuDef()
 	Local aRotina := {;
 		{ STR0002, 'AxPesqui', 0, 1, Nil, .F. },; // "Pesquisar"
 	    { STR0003, 'NGCAD01', 0, 2, Nil, .F. },; // "Vizualizar"
-		{ STR0004, 'U_NGA004A', 0, 3, Nil, .F. }; // "Exames"
+		{ STR0004, 'U_NGA004A', 0, 3, Nil, .F. }; // "Ficha Médica"
 	}
 
 Return aRotina

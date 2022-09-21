@@ -76,8 +76,8 @@ de nascimento
 //---------------------------------------------------------------------
 User Function ValDatN()
 
-    Local dAdmi := M->ZZ1_DTADMI
-    Local dNasc := M->ZZ1_DTNASC
+    Local dAdmi := M->ZA1_DTADMI
+    Local dNasc := M->ZA1_DTNASC
 
     If dAdmi < dNasc 
         MsgStop( "Data de admissão não pode ser menor que data de nascimento!", "ATENÇÃO" )
@@ -97,8 +97,8 @@ de admissão
 //---------------------------------------------------------------------
 User Function ValDatD()
 
-    Local dDemi := M->ZZ1_DTDEMI
-    Local dAdmi := M->ZZ1_DTADMI
+    Local dDemi := M->ZA1_DTDEMI
+    Local dAdmi := M->ZA1_DTADMI
 
     If dDemi < dAdmi
         MsgStop( "Data de demissão não pode ser menor que data de admissão!", "ATENÇÃO" )

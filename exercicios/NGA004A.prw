@@ -55,24 +55,34 @@ Return aRotina
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} NGANOME
-Função que retorna uma validação para o campo nome do funcionário 
+Função que retorna o nome do funcionário 
 
 @author Eloisa Anibaletto
 @since 25/08/2022
 /*/
 //---------------------------------------------------------------------
-User Function NGANOME()
+User Function NGANOME( cTipo )
 
-	Local cFil := IIf( Len( AllTrim( ZA4->ZA4_FILIAL ) ) != Len( AllTrim( xFilial( "ZA2" ) ) ), xFilial( "ZA2" ), ZA4->ZA4_FILIAL )
+Local cNumFic := IIf(cTipo == "X7", M->ZA4_NUMFIC, ZA4->ZA4_NUMFIC)
+Local cRet := ""
 
-Return IIf( ZA2->( dbSeek( xFilial( "ZA2", cFil ) + ZA4->ZA4_NUMFIC ) ), ZA2->ZA2_NOME, "" )
+	If !(Inclui .And. cTipo == "INIPAD")
+
+		cRet := Posicione( "ZA1", 1, xFilial( "ZA1" ) +;
+			Posicione( "ZA2", 1, xFilial( "ZA2" ) + cNumFic, "ZA2_MAT" ),;
+			"ZA1_NOME" )
+
+	EndIf
+
+Return cRet
+
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} NGAEXA
-Função que retorna uma validação para o campo descrição de exame
+Função que retorna a descrição do exame
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 13/09/2022
 /*/
 //---------------------------------------------------------------------
 User Function NGAEXA()

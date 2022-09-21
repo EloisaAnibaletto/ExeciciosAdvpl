@@ -58,7 +58,7 @@ Return aRotina
 Função que retorna uma validação do valor de nota
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValNota()
@@ -74,10 +74,10 @@ Return .T.
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValCodTu
-Função que retorna uma validação para o campo código de turma 
+Função que retorna no inic browser o código da turma 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValCodTu()
@@ -88,10 +88,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValDesTu
-Função que retorna uma validação para o campo descrição de turma 
+Função que retorna no inic browser a descrição da turma 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValDesTu()
@@ -102,10 +102,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValCodMa
-Função que retorna uma validação para o campo código de matéria 
+Função que retorna no inic browser o código da matéria 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValCodMa()
@@ -116,10 +116,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValCodMa
-Função que retorna uma validação para o campo descrição de matéria 
+Função que retorna no inic browser a descrição da matéria 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValDesMa()
@@ -130,10 +130,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValMatP
-Função que retorna uma validação para o campo matrícula do professor 
+Função que retorna no inic browser a matrícula do professor 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValMatP()
@@ -144,10 +144,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValNomeP
-Função que retorna uma validação para o campo nome do professor 
+Função que retorna no inic browser o nome do professor 
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValNomeP()
@@ -158,10 +158,10 @@ Return IIf( ZZ6->( dbSeek( xFilial( "ZZ6", cFil ) + ZZ7->ZZ7_DISC ) ), ZZ6->ZZ6_
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValNomeA
-Função que retorna uma validação para o campo nome do aluno
+Função que retorna no inic browser o nome do aluno
 
 @author Eloisa Anibaletto
-@since 25/08/2022
+@since 09/08/2022
 /*/
 //---------------------------------------------------------------------
 User Function ValNomeA()

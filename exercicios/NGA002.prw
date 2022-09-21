@@ -67,7 +67,7 @@ Return aRotina
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValNome
-Função que retorna uma validação para o campo código de turma 
+Função que retorna no browser o nome do funcionário
 
 @author Eloisa Anibaletto
 @since 25/08/2022
@@ -81,7 +81,7 @@ Return IIf( ZA1->( dbSeek( xFilial( "ZA1", cFil ) + ZA2->ZA2_MAT ) ), ZA1->ZA1_N
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValDtNas
-Função que retorna uma validação para o campo descrição de turma 
+Função que retorna no browser a data de nascimento 
 
 @author Eloisa Anibaletto
 @since 25/08/2022
@@ -95,7 +95,7 @@ Return IIf( ZA1->( dbSeek( xFilial( "ZA1", cFil ) + ZA2->ZA2_MAT ) ), ZA1->ZA1_D
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValSexo
-Função que retorna uma validação para o campo código de matéria 
+Função que retorna no browser o sexo 
 
 @author Eloisa Anibaletto
 @since 25/08/2022
@@ -109,7 +109,7 @@ Return IIf( ZA1->( dbSeek( xFilial( "ZA1", cFil ) + ZA2->ZA2_MAT ) ), ZA1->ZA1_S
 
 ///---------------------------------------------------------------------
 /*/{Protheus.doc} ValRg
-Função que retorna uma validação para o campo descrição de matéria 
+Função que retorna no browser o RG 
 
 @author Eloisa Anibaletto
 @since 25/08/2022
