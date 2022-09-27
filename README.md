@@ -1,7 +1,7 @@
 # ExeciciosAdvpl
 
 Criação de fontes para atividades em Advpl.
-Esses primeiros fontes não foram modificados para MVC ainda.
+Arquivos com final "M.prw" ou "MA.prw" foram fontes modificados para MVC.
 
 Primeiro exercícios de ESA001 até ESR001
 Sistema de escola
